@@ -1,0 +1,9 @@
+{
+  "type": "number",
+  "title": { "en": "Illuminance value" },
+  "getable": true,
+  "setable": false,
+  "uiComponent": "sensor",
+  "uiQuickAction": true,
+  "icon": "/assets/brightness.svg"
+}

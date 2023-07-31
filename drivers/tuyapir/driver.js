@@ -17,6 +17,10 @@ class TuyaPirDriver extends TuyaBaseDriver {
             let covers = this.get_devices_by_type("pir");
             for (let tuyaDevice of Object.values(covers)) {
                 let capabilities = [];
+                // if tuyaDevice has capabilitiy illuminance
+                // you need to Change Control Instruction Mode to "DP Instructions"
+                // follow: https://developer.tuya.com/en/docs/iot/change-control-instruction-mode?id=Kcbz8lahbg5st
+                // capabilities.push("illuminance")
                 capabilities.push("alarm_motion");
                 capabilities.push("measure_battery");
                 capabilities.push("alarm_battery");
